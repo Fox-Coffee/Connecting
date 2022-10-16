@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0; color: whitesmoke;}
+.button{
+    background-color: #4287f5;
+    text-align: center;
+    padding: 8px;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 6%;
+    transition-duration: 0.5s;
+    margin-top: 100px;
+    width: 120px;
+    margin-right: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #639efc;
+    transform: scale(1.3, 1.3);
+    transform: translate(-50%, -50%);
+}

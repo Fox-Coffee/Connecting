@@ -1,0 +1,1 @@
+document.getElementById("tryagain").addEventListener("click", () => {window.location.href = "index.php"});
