@@ -17,12 +17,34 @@
 .button:hover{
     background-color: #639efc;
 }
-table, th, td{
-    border: solid whitesmoke 1px;
-}
 table{
     border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
 }
 th{
     border: 2px whitesmoke solid;
+}
+header{background-color: #4287f5; height: 100px;}
+.col_dark{
+    background-color: rgb(136, 136, 136) !important;
+}
+.col_light{
+    background-color: rgb(199, 199, 199) !important;
+}
+tr input, tr select{
+    border: 1px solid white;
+    width: auto;
+    transition-duration: 0.2s;
+}
+tr input:hover, tr select:hover{
+    border: 1px solid white;
+    width: auto;
+    background-color: rgb(136, 136, 136);
+}
+#date{
+    width: 100%;
+}
+#error{
+    color: red;
 }
