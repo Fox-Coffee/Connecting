@@ -1,6 +1,5 @@
 <?php
 
-    declare(strict_types=1);
     require 'inc/config.php';
     require 'inc/load.php';
 
@@ -26,6 +25,14 @@
         </tr>
         <?php
             $pol = new Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_BASENAME);
+            $query = $pol->sql->query("SELECT * FROM tabela;");
+            while($row = $query->fetch()){
+                echo'<tr>';
+                foreach($row as $i){
+                    echo '<td>'.$i.'</td>';
+                }
+                echo'</tr>';
+            }
         ?>
     </table>
 </body>
