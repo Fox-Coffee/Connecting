@@ -25,7 +25,7 @@
             <th>Miasto Zamieszkania</th>
         </tr>
         <?php
-            $pol = new Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_BASENAME);
+            $pol = new Connect(DB_SOFTWARE, DB_SERVER, DB_USER, DB_PASSWORD, DB_BASENAME);
             $query = $pol->sql->query("SELECT * FROM tabela;");
             $x = 'light';
             while($row = $query->fetch()){
@@ -57,7 +57,6 @@
                 <td><input type="text" name="city" id="city"></td>
                 <td><input type="submit" value="Zaktualizuj"></td>
                 </form></tr>
-                <br><div id="error">
     </table>
 </body>
 </html>
