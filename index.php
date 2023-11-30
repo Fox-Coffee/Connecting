@@ -1,7 +1,7 @@
 <?php
 
-    require 'inc/config.php';
-    require 'inc/load.php';
+    require './classes/connect.class.php';
+    require './config.php';
 
 ?>
 <!DOCTYPE html>
@@ -18,15 +18,16 @@
     <table>
         <tr>
             <th>ID</th>
-            <th>Imie</th>
-            <th>Nazwisko</th>
-            <th>Data Urodzenia</th>
-            <th>Płeć</th>
-            <th>Miasto Zamieszkania</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>City of residence
+            </th>
         </tr>
         <?php
             $pol = new Connect(DB_SOFTWARE, DB_SERVER, DB_USER, DB_PASSWORD, DB_BASENAME);
-            $query = $pol->sql->query("SELECT * FROM tabela;");
+            $query = $pol->sql->query("SELECT * FROM people;");
             $x = 'light';
             while($row = $query->fetch()){
                 echo'<tr>';
@@ -50,12 +51,12 @@
                 <td><input type="text" name="last" id="last"></td>
                 <td><input type="date" name="date" id="date"></td>
                 <td> <select name="gender" id="gender">
-                    <option value="M">Mężczyzna</option>
-                    <option value="F">Kobieta</option>
-                    <option value="N">Inna</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="N">Other</option>
                 </select></td>
                 <td><input type="text" name="city" id="city"></td>
-                <td><input type="submit" value="Zaktualizuj"></td>
+                <td><input type="submit" value="Add"></td>
                 </form></tr>
     </table>
 </body>

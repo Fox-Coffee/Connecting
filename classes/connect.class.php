@@ -16,7 +16,7 @@ class Connect{
             $this->sql = new PDO($this->software.':host='.$this->server.";dbname=".$this->basename, $this->username, $this->password);
             $this->sql->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch(PDOException $e){
-            //header('Location: error.html');
+            header('Location: error.html');
         }
     }
     public function __destruct(){

@@ -1,14 +1,14 @@
 -- schema.sql
 
 -- Drop the table if it exists (for development purposes)
-DROP TABLE IF EXISTS tabela;
+DROP TABLE IF EXISTS people;
 
--- Create the tabela table
-CREATE TABLE tabela (
+-- Create the table
+CREATE TABLE people (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    Imie VARCHAR(255) NOT NULL,
-    Nazwisko VARCHAR(255) NOT NULL,
-    Data_Urodzenia DATE NOT NULL,
-    Plec CHAR(1) NOT NULL,
-    Miasto_Zamieszkania VARCHAR(255) NOT NULL
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    Gender CHAR(1) NOT NULL,
+    CityOfResidence VARCHAR(255) NOT NULL
 );
