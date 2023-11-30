@@ -6,8 +6,8 @@
 3. [Usage](#usage)
 4. [Dependencies](#dependencies)
 5. [Contributing](#contributing)
-6. [Note](#note)
-
+6. License(#license)
+7. [Note](#note)
 
 
 ## Overview
@@ -33,6 +33,9 @@ This project is a simple web application that allows users to manage a database 
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE.md) file for details.
 
 ## Note
 Ensure that error reporting is enabled during development and disabled in production for security reasons.
