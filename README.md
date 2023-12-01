@@ -6,7 +6,7 @@
 3. [Usage](#usage)
 4. [Dependencies](#dependencies)
 5. [Contributing](#contributing)
-6. License(#license)
+6. [License](#license)
 7. [Note](#note)
 
 
